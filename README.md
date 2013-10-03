@@ -28,23 +28,23 @@ How to Build
     <groupId>com.tagtraum</groupId>
     <artifactId>gcviewer</artifactId>
     <version>1.33</version>
-    </dependency>
-```
+    </dependency>```
 * mvn clean install
 
 How to Use
 =====
 * edit included sources.yml and copy it to folder $user.home/conf/gcweb/ (eg. /usr/home/jbossusr/conf/gcweb, c:\user\owner\conf)
-* [option] copy or edit log4j_conf.xml and put it into the same folder as sources.yml
+* [optional] copy or edit log4j_conf.xml and put it into the same folder as sources.yml
 * deploy GCWeb.war to Java EE 5 application server (Tested on Weblogic 10.3.5 and Jboss AS 7.1 with JDK 7)
 
 Performance
 =====
 I have tuned this thing to an acceptable level with limited number of GC logs. UX should always fast as every gc log data is cached.
-Mainly, performance depends on how big your GC log is and how number of cpu core your server has. 
+Mainly, performance depends on how big your GC log is and a number/speed of cpu core your server has. 
 If refresh rate is fast, you might need to adjust Quartz thread pool to have a higher number of thread. 
-Tips, don't trigger ssh type gc log, too much, at the same time to prevent ssh timeout (3 seconds to locate target gc log).
+Tips, don't trigger 'ssh type' gc log, too much, at the same time to prevent ssh timeout (3 seconds to locate target gc log).
 
+Wish List
 =====
 * Faster string processing, from parsed GC events to CSV. Now it took around 2-3 seconds to convert ~8,000 events to CSV.
 * Full GC support.
