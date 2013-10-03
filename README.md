@@ -3,7 +3,7 @@ GCWeb
 Copyright 2013 Krisa Chaijaroen under LGPL License (Please see included LICENSE)
 
 Web Interface for GCViewer built on standard Java EE 5. Work best on Google Chrome Webkit Engine & IE10.
-
+[<img src="http://krisachai.files.wordpress.com/2013/10/gcweb.png?w=590">]
 Feature
 =====
 * Support both local file systems and remote GC log file via SSH (Tested on RHEL 5)
