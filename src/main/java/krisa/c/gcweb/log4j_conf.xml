@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" [
+	<!ENTITY logPath "./log/">
+]>
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="GCWebAppender" class="org.apache.log4j.appender.TimeAndSizeRollingAppender">
+		<param name="File" value="./log/GCWeb.log"/>
+		<param name="Threshold" value="DEBUG"/>
+		<param name="BufferedIO" value="false"/>
+		<param name="BufferSize" value="250"/>
+		<param name="DateRollEnforced" value="true"/>
+		<param name="MaxFileSize" value="20MB"/>
+		<param name="MaxRollFileCount" value="100"/>
+		<param name="ScavengeInterval" value="60000"/>
+		<param name="CompressionMinQueueSize" value="5"/>
+		<param name="CompressionAlgorithm" value="GZ"/>
+		<param name="DatePattern" value=".yyyyMMdd"/>
+		<!--param name="FileRollEventMessage" value="First line of each file following a roll"/-->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS}|%5p|(%M:%t)|%m%n"/>
+		</layout>
+	</appender>
+	<root>
+	  <priority value="debug"></priority>
+	  <appender-ref ref="stdout"/>
+	</root>
+</log4j:configuration>

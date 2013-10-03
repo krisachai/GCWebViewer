@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <display-name>GCWeb</display-name>
+    <servlet>
+        <servlet-name>GCData</servlet-name>
+        <servlet-class>krisa.c.gcweb.servlet.GCData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InitQuartzSchd</servlet-name>
+        <servlet-class>krisa.c.gcweb.servlet.InitQuartzSchd</servlet-class>
+    </servlet>
+    <listener>
+        <listener-class>krisa.c.gcweb.servlet.InitQuartzSchd</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>Sources</servlet-name>
+        <servlet-class>krisa.c.gcweb.servlet.Sources</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GCData</servlet-name>
+        <url-pattern>/GCData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sources</servlet-name>
+        <url-pattern>/Sources</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
