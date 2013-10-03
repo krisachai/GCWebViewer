@@ -1,4 +1,4 @@
-GCWeb
+GCWebViewer
 =====
 Copyright 2013 Krisa Chaijaroen under LGPL License (Please see included LICENSE)
 
@@ -35,7 +35,7 @@ How to Use
 =====
 * edit included sources.yml and copy it to folder $user.home/conf/gcweb/ (eg. /usr/home/jbossusr/conf/gcweb, c:\user\owner\conf)
 * [optional] copy or edit log4j_conf.xml and put it into the same folder as sources.yml
-* deploy GCWeb.war to Java EE 5 application server (Tested on Weblogic 10.3.5 and Jboss AS 7.1 with JDK 7)
+* deploy GCWebViewer.war to Java EE 5 application server (Tested on Weblogic 10.3.5 and Jboss AS 7.1 with JDK 7)
 
 Performance
 =====
@@ -51,7 +51,7 @@ Wish List
 
 License
 =====
-GCWeb uses
+GCWebViewer uses
 * GCViewer Copyright (c) 2002-2008 tagtraum industries incorporated.Copyright (c) 2011-2013 Joerg Wuethrich under [LGPL license] [https://github.com/chewiebug/GCViewer/blob/master/LICENSE.txt]
 * DyGraph Copyright (c) 2006-, Dan Vanderkam. [MIT license][https://github.com/danvk/dygraphs/blob/master/LICENSE.txt]
 * dygraphs-export [MIT license][http://cavorite.com/labs/js/dygraphs-export/]
