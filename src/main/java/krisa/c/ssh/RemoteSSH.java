@@ -32,7 +32,7 @@ import org.apache.sshd.SshClient;
  * under the License.
  *
  *@author <a href="mailto:dev@mina.apache.org">Apache MINA SSHD Project</a>
- * @author Modify by Krisa.Chaijaroen
+ * Modify by Krisa.Chaijaroen
  */
 public class RemoteSSH {
 
