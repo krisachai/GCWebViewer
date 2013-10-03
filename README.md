@@ -28,7 +28,7 @@ How to Build
             <artifactId>gcviewer</artifactId>
             <version>1.33</version>
         </dependency>
-* mvn install clean
+* mvn clean install
 
 How to Use
 =====
