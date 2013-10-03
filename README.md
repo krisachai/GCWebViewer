@@ -23,11 +23,12 @@ How to Build
 * Build latest GCViewer [https://github.com/chewiebug/GCViewer]
 * Create maven local repository for GCViewer Jar file [http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html]
 * include GCViewer in pom.xml
-    <dependency>
+    ```<dependency>
     <groupId>com.tagtraum</groupId>
     <artifactId>gcviewer</artifactId>
     <version>1.33</version>
     </dependency>
+```
 * mvn clean install
 
 How to Use
