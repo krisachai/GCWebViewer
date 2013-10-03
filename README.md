@@ -1,5 +1,6 @@
 GCWeb
 =====
+Copyright (c) 2013 Krisa Chaijaroen.
 
 Web Interface for GCViewer
 
