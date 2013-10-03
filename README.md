@@ -1,6 +1,7 @@
 GCWeb
 =====
 Copyright 2013 Krisa Chaijaroen under LGPL License (Please see included LICENSE)
+
 Web Interface for GCViewer built on standard Java EE 5. Work best on Google Chrome Webkit Engine & IE10.
 
 Feature
