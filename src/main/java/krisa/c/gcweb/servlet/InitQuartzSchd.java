@@ -40,14 +40,13 @@ public class InitQuartzSchd implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         try {
-            log.info("Loading Log4j configuration from : "+Config.prefix);
+            log.info("Loading Log4j configuration from : " + Config.prefix);
             DOMConfigurator.configure(Config.prefix + "log4j_conf.xml");
-            
+
         } catch (Exception e) {
-            log.error("Exception Caught!",e);
-        } finally{
-        BasicConfigurator.configure();
-        log.warn("Load Basic Configuration for Log4j");
+            log.error("Exception Caught!", e);
+            BasicConfigurator.configure();
+            log.warn("Load Basic Configuration for Log4j");
         }
 
         GCSource gcs = new GCSource();
@@ -91,11 +90,11 @@ public class InitQuartzSchd implements ServletContextListener {
         InputProcessor inp = null;
         switch (src.getType()) {
             case "file":
-                inp = new FileInputProcessor(src.getPath(),src.getUid());
+                inp = new FileInputProcessor(src.getPath(), src.getUid());
                 break;
             case "ssh":
                 if (src.getHostname() != null || src.getUser() != null || src.getPassword() != null) {
-                    inp = new SSHInputProcessor(src.getHostname(), src.getUser(), src.getPassword(), src.getPath(),src.getUid());
+                    inp = new SSHInputProcessor(src.getHostname(), src.getUser(), src.getPassword(), src.getPath(), src.getUid());
                 } else {
                     log.error(src.getPath() + " ssh type without password [" + src.getType() + "]");
                 }
