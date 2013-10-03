@@ -1,6 +1,6 @@
 GCWeb
 =====
-
+Copyright 2013 Krisa Chaijaroen under LGPL License (included as license.txt)
 Web Interface for GCViewer
 
 GCWeb uses
