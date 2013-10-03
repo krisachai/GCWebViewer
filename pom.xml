@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>krisa.c</groupId>
-    <artifactId>GCWeb</artifactId>
+    <artifactId>GCWebViewer</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
