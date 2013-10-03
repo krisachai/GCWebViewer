@@ -3,6 +3,12 @@ GCWeb
 Copyright 2013 Krisa Chaijaroen under LGPL License (included as license.txt)
 Web Interface for GCViewer
 
+Feature
+=====
+
+
+License
+=====
 GCWeb uses
 * GCViewer Copyright (c) 2002-2008 tagtraum industries incorporated.Copyright (c) 2011-2013 Joerg Wuethrich under [LGPL license] [https://github.com/chewiebug/GCViewer/blob/master/LICENSE.txt]
 * DyGraph Copyright (c) 2006-, Dan Vanderkam. [MIT license][https://github.com/danvk/dygraphs/blob/master/LICENSE.txt]
