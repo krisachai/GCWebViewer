@@ -1,0 +1,19 @@
+#Type: file or ssh
+#path: gc log directory or file
+#refresh: time to reload gc log in second
+#user: user for ssh
+#password: password for ssh
+#hostname: hostname for ssh
+#uid: unique ID for gc log (will represent as graph title also)
+source:
+ - type : "file"
+   path : "C:\\Users\\OWNER\\Downloads"
+   refresh : 60
+   uid : App MS1
+ - type : "ssh"
+   path : "/app/oracle/weblogic/domains/test/servers/test_ms1/logs/"
+   user : "weblogic"
+   password : "passwd"
+   hostname : "192.168.1.1"
+   refresh : 60
+   uid : Web_1
