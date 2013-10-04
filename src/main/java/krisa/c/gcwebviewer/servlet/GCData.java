@@ -1,4 +1,4 @@
-package krisa.c.gcweb.servlet;
+package krisa.c.gcwebviewer.servlet;
 
 import java.awt.geom.Point2D;
 import java.io.IOException;
@@ -13,9 +13,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import krisa.c.gcweb.util.DateTimeUtil;
+import krisa.c.gcwebviewer.util.DateTimeUtil;
 
-import krisa.c.gcweb.cache.GCResultCache;
+import krisa.c.gcwebviewer.cache.GCResultCache;
 import org.slf4j.LoggerFactory;
 
 /**

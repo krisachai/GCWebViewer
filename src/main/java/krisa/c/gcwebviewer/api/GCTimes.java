@@ -1,4 +1,4 @@
-package krisa.c.gcweb.api;
+package krisa.c.gcwebviewer.api;
 
 import java.util.Iterator;
 

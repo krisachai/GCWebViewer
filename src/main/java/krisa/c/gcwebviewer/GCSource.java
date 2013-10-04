@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package krisa.c.gcweb;
+package krisa.c.gcwebviewer;
 
 import java.util.ArrayList;
 import java.util.List;

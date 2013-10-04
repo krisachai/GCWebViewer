@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package krisa.c.gcweb.job;
+package krisa.c.gcwebviewer.job;
 
 import com.tagtraum.perf.gcviewer.imp.DataReader;
 import com.tagtraum.perf.gcviewer.imp.DataReaderFactory;
@@ -15,12 +15,12 @@ import java.io.InputStream;
 import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.List;
-import krisa.c.gcweb.api.GCTimes;
-import krisa.c.gcweb.api.UsedTenured;
-import krisa.c.gcweb.api.UsedYoung;
-import krisa.c.gcweb.inputprocessor.InputProcessor;
-import krisa.c.gcweb.cache.GCResultCache;
-import krisa.c.gcweb.util.DateTimeUtil;
+import krisa.c.gcwebviewer.api.GCTimes;
+import krisa.c.gcwebviewer.api.UsedTenured;
+import krisa.c.gcwebviewer.api.UsedYoung;
+import krisa.c.gcwebviewer.inputprocessor.InputProcessor;
+import krisa.c.gcwebviewer.cache.GCResultCache;
+import krisa.c.gcwebviewer.util.DateTimeUtil;
 import org.quartz.Job;
 import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;

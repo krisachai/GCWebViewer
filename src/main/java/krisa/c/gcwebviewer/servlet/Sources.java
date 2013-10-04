@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package krisa.c.gcweb.servlet;
+package krisa.c.gcwebviewer.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -15,8 +15,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import krisa.c.gcweb.Config;
-import krisa.c.gcweb.GCSource;
+import krisa.c.gcwebviewer.Config;
+import krisa.c.gcwebviewer.GCSource;
 import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;

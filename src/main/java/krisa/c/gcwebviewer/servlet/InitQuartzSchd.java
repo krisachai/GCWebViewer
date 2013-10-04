@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package krisa.c.gcweb.servlet;
+package krisa.c.gcwebviewer.servlet;
 
 import java.util.List;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import krisa.c.gcweb.inputprocessor.InputProcessor;
-import krisa.c.gcweb.inputprocessor.FileInputProcessor;
-import krisa.c.gcweb.inputprocessor.SSHInputProcessor;
-import krisa.c.gcweb.job.GCProcessorJob;
-import krisa.c.gcweb.Config;
-import krisa.c.gcweb.GCSource;
+import krisa.c.gcwebviewer.inputprocessor.InputProcessor;
+import krisa.c.gcwebviewer.inputprocessor.FileInputProcessor;
+import krisa.c.gcwebviewer.inputprocessor.SSHInputProcessor;
+import krisa.c.gcwebviewer.job.GCProcessorJob;
+import krisa.c.gcwebviewer.Config;
+import krisa.c.gcwebviewer.GCSource;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
 import static org.quartz.JobBuilder.newJob;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package krisa.c.gcweb.cache;
+package krisa.c.gcwebviewer.cache;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

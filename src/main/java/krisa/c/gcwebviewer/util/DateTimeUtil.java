@@ -1,4 +1,4 @@
-package krisa.c.gcweb.util;
+package krisa.c.gcwebviewer.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
