@@ -40,14 +40,7 @@ public class Config {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        Yaml yml = new Yaml();
-        Map map = (Map) yml.load(new FileReader("C:\\Users\\KZ\\conf\\gcweb\\sources.yml"));
-        List<Map> sources = (List) map.get("source");
-        for (Map object : sources) {
-            System.out.println(object.get("path"));
-            System.out.println(object.get("refresh").getClass());
-        }
-        // System.out.println(map.get("source").getClass());
+
     }
 
 }

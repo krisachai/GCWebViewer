@@ -14,8 +14,4 @@ public class DateTimeUtil {
 			return new SimpleDateFormat("yyyy/MM/dd H:mm:ss");
 		}
 	};
-	public static void main(String[] args){
-		System.out.println(DateTimeUtil.SDF_DEFAULT_DATE_TIME_FORMAT.get().format(new Date()));
-		
-	}
 }

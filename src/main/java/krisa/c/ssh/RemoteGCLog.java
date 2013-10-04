@@ -44,10 +44,6 @@ public class RemoteGCLog {
         client.disconnect();
     }
 
-    public static void main(String[] args) throws Exception {
-
-    }
-
     static String convertStreamToString(java.io.InputStream is) {
         java.util.Scanner s = new java.util.Scanner(is).useDelimiter("\\A");
         return s.hasNext() ? s.next() : "";

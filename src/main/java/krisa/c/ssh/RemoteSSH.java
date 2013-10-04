@@ -72,9 +72,6 @@ public class RemoteSSH {
         client.stop();
     }
 
-    public static void main(String[] args) throws IOException, InterruptedException {
-     
-    }
 }
 
 class TeePipedOutputStream extends PipedOutputStream {

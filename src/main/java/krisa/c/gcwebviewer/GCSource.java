@@ -53,17 +53,6 @@ public class GCSource {
         return sources;
     }
 
-    public static void main(String[] args) {
-        GCSource gcs = new GCSource();
-        List<GCSource> sources = gcs.parseConfig(new Config());
-        System.out.println(sources.size());
-        System.out.println(sources.get(0).getType());
-
-        for (GCSource gCSource : sources) {
-            System.out.println("Called - >> " + gCSource.getPath());
-        }
-    }
-
     /**
      * @return the type
      */

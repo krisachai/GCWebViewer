@@ -46,8 +46,4 @@ public class SFTP {
         sftpChannel.exit();
         session.disconnect();
     }
-
-    public static void main(String[] args) throws IOException {
-       
-    }
 }

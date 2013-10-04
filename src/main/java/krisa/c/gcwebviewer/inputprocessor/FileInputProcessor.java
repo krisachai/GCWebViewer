@@ -84,28 +84,6 @@ public class FileInputProcessor extends InputProcessor {
         return targetFile;
     }
 
-    public static void main(String[] args) {
-        //InputProcessor inp = new FileInputProcessor("C:\\Users\\KZ\\Downloads\\gc.log");
-        //inp.load();
-        //  System.out.println(inp.rawgc);
-        File dir = new File("C:\\Users\\KZ\\Downloads");
-        FileFilter fileFilter = new WildcardFileFilter("*GC*");
-        File[] files = dir.listFiles(fileFilter);
-        File targetFile = null;
-        for (int i = 0; i < files.length; i++) {
-            System.out.println(files[i] + "," + files[i].lastModified());
-            if (targetFile == null) {
-                targetFile = files[i];
-            } else {
-                if (targetFile.lastModified() < files[i].lastModified()) {
-                    targetFile = files[i];
-                }
-            }
-        }
-
-        System.out.println("Target -> " + targetFile.getName());
-    }
-
     /**
      * @return the path
      */
