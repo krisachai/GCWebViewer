@@ -31,7 +31,7 @@ public class RemoteGCLog {
         String cmd = "find " + logpath + " -type f  -printf '%T@ %p\\n'  | sort -n | tail -6 | cut -f2- -d\" \" |grep gc \n";
         log.debug("finding for possible GC log with this comomand [" + cmd + "]");
         String res = client.sendCMD(cmd, 3000);
-        //  System.out.println(res);
+         System.out.println(res);
         String[] results = res.split("\n");
 
         gcfile = results[results.length - 2].trim();
@@ -39,7 +39,7 @@ public class RemoteGCLog {
         return results[results.length - 2].trim();
 
     }
-
+   
     public void close() {
         client.disconnect();
     }
@@ -48,4 +48,5 @@ public class RemoteGCLog {
         java.util.Scanner s = new java.util.Scanner(is).useDelimiter("\\A");
         return s.hasNext() ? s.next() : "";
     }
+  
 }

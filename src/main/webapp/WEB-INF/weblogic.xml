@@ -4,5 +4,5 @@
     <keepgenerated>true</keepgenerated>
     <debug>true</debug>
   </jsp-descriptor>
-  <context-root>/GCWeb</context-root>
+  <context-root>/GCViewerWeb</context-root>
 </weblogic-web-app>

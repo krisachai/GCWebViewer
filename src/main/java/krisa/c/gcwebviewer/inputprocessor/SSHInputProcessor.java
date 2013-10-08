@@ -5,8 +5,11 @@
  */
 package krisa.c.gcwebviewer.inputprocessor;
 
+import java.io.IOException;
 import krisa.c.ssh.RemoteGCLog;
 import java.io.InputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import krisa.c.ssh.SFTP;
 import org.slf4j.LoggerFactory;
 
@@ -31,21 +34,38 @@ public class SSHInputProcessor extends InputProcessor {
     @Override
     public void load() {
         String gcpath = null;
+        RemoteGCLog rgc = null;
+        SFTP sftp = null;
+        InputStream ins = null;
         try {
             log.debug("[+" + uid + "]Start loading file from ssh");
-            RemoteGCLog rgc = new RemoteGCLog(hostname, user, password, path);
+            rgc = new RemoteGCLog(hostname, user, password, path);
             gcpath = rgc.findGCLog();
             log.debug("[+" + uid + "]Returned GC File : " + gcpath);
-            rgc.close();
-            SFTP sftp = new SFTP(hostname, user, password);
-            InputStream ins = sftp.getFile(gcpath);
+
+            sftp = new SFTP(hostname, user, password);
+            ins = sftp.getFile(gcpath);
             String gc = convertStreamToString(ins);
             //System.out.println(rawgc);
-            ins.close();
-            sftp.close();
+
             super.rawgc = gc;
         } catch (Exception ex) {
+
             log.error("[+" + uid + "]Exception Caught! ->" + gcpath, ex);
+        } finally {
+            if (rgc != null) {
+                rgc.close();
+            }
+            if(sftp!=null){
+            sftp.close();
+            }
+            if(ins!=null){
+                try {
+                    ins.close();
+                } catch (IOException ex) {
+                    Logger.getLogger(SSHInputProcessor.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
         }
 
     }

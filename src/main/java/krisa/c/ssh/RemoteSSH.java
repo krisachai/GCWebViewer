@@ -69,6 +69,7 @@ public class RemoteSSH {
 
     public void disconnect() {
         channel.close(true);
+        session.close(true);
         client.stop();
     }
 
